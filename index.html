@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="js/playerjs1.js" type="text/javascript" async></script>
+    <title>Дядька на заказ</title>
+  </head>
+  <body>
+    <div id="player"></div>
+    <style>
+      body {
+        background-color: #45414b;
+      }
+    </style>
+    <script>
+      function PlayerjsAsync() {
+        player = new Playerjs({
+          id: "player",
+          file: [
+            {
+              title: "Jazz",
+              file: "https://nashe1.hostingradio.ru:80/jazz-128.mp3"
+            },
+            {
+              title: "Monte Carlo",
+              file: "https://montecarlo.hostingradio.ru/montecarlo96.aacp"
+            }
+          ]
+        });
+      }
+    </script>
+  </body>
+</html>
